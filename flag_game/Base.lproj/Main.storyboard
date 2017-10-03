@@ -17,29 +17,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LL1-aG-Dc8">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LL1-aG-Dc8">
                                 <rect key="frame" x="100" y="230" width="200" height="100"/>
                                 <state key="normal" title="Button" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DU7-ea-XTz"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdR-bk-FGD">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdR-bk-FGD">
                                 <rect key="frame" x="100" y="360" width="200" height="100"/>
+                                <inset key="contentEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Button" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bXP-sf-Iva"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eo4-HP-AaL">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eo4-HP-AaL">
                                 <rect key="frame" x="100" y="100" width="200" height="100"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oAd-t2-c8x"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eo4-HP-AaL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="8Xv-SV-QWu"/>
-                            <constraint firstItem="LL1-aG-Dc8" firstAttribute="top" secondItem="eo4-HP-AaL" secondAttribute="bottom" constant="30" id="Aag-uO-eAS"/>
+                            <constraint firstItem="eo4-HP-AaL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="E4d-7D-tuF"/>
                             <constraint firstItem="ZdR-bk-FGD" firstAttribute="centerX" secondItem="LL1-aG-Dc8" secondAttribute="centerX" id="Up3-h9-Gny"/>
+                            <constraint firstItem="LL1-aG-Dc8" firstAttribute="centerX" secondItem="eo4-HP-AaL" secondAttribute="centerX" id="Uuj-fb-loU"/>
                             <constraint firstItem="ZdR-bk-FGD" firstAttribute="top" secondItem="LL1-aG-Dc8" secondAttribute="bottom" constant="30" id="auQ-lv-ocM"/>
-                            <constraint firstItem="LL1-aG-Dc8" firstAttribute="centerX" secondItem="eo4-HP-AaL" secondAttribute="centerX" id="iKy-Z6-55a"/>
-                            <constraint firstItem="eo4-HP-AaL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="mdW-EV-ZFU"/>
-                            <constraint firstItem="eo4-HP-AaL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="q2T-Zh-v45"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eo4-HP-AaL" secondAttribute="trailing" constant="75" id="yDO-id-jX6"/>
+                            <constraint firstItem="LL1-aG-Dc8" firstAttribute="top" secondItem="eo4-HP-AaL" secondAttribute="bottom" constant="30" id="cVf-y6-jvR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
